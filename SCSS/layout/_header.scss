@@ -104,10 +104,13 @@ header {
 
 @media (min-width: $breakpoint-md) {
 
-
     header {
 
-        padding: $spacing-sm $spacing-lg;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        position: sticky;
 
     }
 
@@ -122,13 +125,14 @@ header {
 
     .mainNav {
 
-        margin-left: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
 
 
         .navbar-nav {
 
             flex-direction: row;
-
             gap: $spacing-xl;
 
         }
