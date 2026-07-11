@@ -27,7 +27,7 @@ header {
 
     width: 60px;
     height: 60px;
-    margin-left: 4rem;
+
 
     border-radius: 50%;
     overflow: hidden;
@@ -97,9 +97,7 @@ header {
 
 
 
-/* ==========================
-   DESKTOP
-========================== */
+//DESKTOP
 
 @media (min-width: $breakpoint-md) {
 
@@ -108,6 +106,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-left: 4rem;
 
         position: sticky;
 
