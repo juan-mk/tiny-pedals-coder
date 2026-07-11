@@ -1,0 +1,40 @@
+@use '../utilities/variables' as *;
+
+/* ==========================
+   CAROUSEL
+========================== */
+
+#carouselExample {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* ==========================
+   PEDAL CONTENT
+========================== */
+
+.pedal-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+.pedal-info {
+    padding: $container-padding;
+    text-align: center;
+}
+
+.pedal-title {
+    margin-bottom: $spacing-sm;
+    color: $color-text;
+}
+
+.pedal-description {
+    max-width: 600px;
+    margin: 0 auto;
+}

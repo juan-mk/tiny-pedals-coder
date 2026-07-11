@@ -1,0 +1,78 @@
+@use "../utilities/variables" as *;
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+    background-color: $color-header;
+    padding: $spacing-sm $spacing-lg;
+
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.headerLogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.mainNav {
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $spacing-xl;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: $color-text;
+        text-decoration: none;
+        font-family: $font-primary;
+        transition: color $transition-fast;
+
+        &:hover {
+            color: #c7c7c7;
+        }
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: $breakpoint-md) {
+
+    header {
+        flex-direction: column;
+        gap: $spacing-md;
+    }
+
+    .mainNav {
+
+        ul {
+            flex-direction: column;
+            gap: $spacing-md;
+        }
+
+    }
+
+}

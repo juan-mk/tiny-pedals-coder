@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+
+/* ==========================
+   TIPOGRAFÍA
+========================== */
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-text;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-text;
+}
+
+p {
+    color: $color-text;
+}
