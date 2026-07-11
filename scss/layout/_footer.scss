@@ -3,9 +3,8 @@
 @use "../utilities/variables" as *;
 
 
-/* ==========================
-   FOOTER MOBILE FIRST
-========================== */
+//FOOTER MOBILE FIRST
+
 
 footer {
 
@@ -23,7 +22,7 @@ footer {
 }
 
 
-/* SOCIAL */
+//SOCIAL
 
 .footerSocial {
 
@@ -52,7 +51,7 @@ footer {
 
 
 
-/* MENU */
+//MENU
 
 .footerMenu {
 
@@ -93,7 +92,7 @@ footer {
 
 
 
-/* COPYRIGHT */
+// COPYRIGHT
 
 .footerCopy {
 
@@ -109,7 +108,7 @@ footer {
 
 
 
-/* WHATSAPP FLOATING BUTTON */
+// WHATSAPP FLOATING BUTTON
 
 .whatsapp {
 
@@ -134,9 +133,7 @@ footer {
 
 
 
-/* ==========================
-   TABLET / DESKTOP
-========================== */
+// TABLET / DESKTOP
 
 @media (min-width: $breakpoint-md) {
 

@@ -1,11 +1,6 @@
 @use "../utilities/variables" as *;
 
 
-/* ==========================
-   MEDIA PAGE
-========================== */
-
-
 .pedal-demos {
 
     padding: $spacing-xl $container-padding;
@@ -71,7 +66,7 @@
 
 
 
-/* TABLET */
+//TABLET
 
 @media (min-width: $breakpoint-md) {
 
@@ -85,7 +80,7 @@
 
 
 
-/* DESKTOP */
+// DESKTOP
 
 @media (min-width: $breakpoint-lg) {
 

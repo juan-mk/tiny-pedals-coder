@@ -1,8 +1,6 @@
 @use '../utilities/variables' as *;
 
-/* ==========================
-   CAROUSEL
-========================== */
+//CAROUSEL
 
 #carouselExample {
     max-width: 700px;
@@ -14,9 +12,7 @@
     filter: brightness(0) invert(1);
 }
 
-/* ==========================
-   PEDAL CONTENT
-========================== */
+//PEDAL CONTENT
 
 .pedal-image {
     width: 100%;

@@ -3,9 +3,7 @@
 @use "../utilities/variables" as *;
 
 
-/* ==========================
-   HEADER MOBILE FIRST
-========================== */
+//HEADER MOBILE FIRST
 
 header {
 
@@ -29,6 +27,7 @@ header {
 
     width: 60px;
     height: 60px;
+    margin-left: 4rem;
 
     border-radius: 50%;
     overflow: hidden;

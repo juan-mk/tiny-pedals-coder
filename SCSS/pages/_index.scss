@@ -1,9 +1,8 @@
 @use '../utilities/variables' as *;
 
 
-/* ==========================
-   MAIN
-========================== */
+//MAIN
+
 
 main {
     text-align: center;
@@ -14,9 +13,7 @@ main {
 }
 
 
-/* ==========================
-   PEDALS GRID
-========================== */
+//PEDALS GRID
 
 .mainPedals {
 
@@ -53,9 +50,7 @@ main {
 
 
 
-/* ==========================
-   HERO IMAGE
-========================== */
+//ERO IMAGE
 
 .mainImage {
 
@@ -79,9 +74,7 @@ main {
 
 
 
-/* ==========================
-   TABLET
-========================== */
+//TABLET
 
 @media (min-width: $breakpoint-md) {
 
@@ -96,9 +89,7 @@ main {
 
 
 
-/* ==========================
-   DESKTOP
-========================== */
+//DESKTOP
 
 @media (min-width: $breakpoint-lg) {
 

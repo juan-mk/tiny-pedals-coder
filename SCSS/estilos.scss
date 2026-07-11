@@ -3,7 +3,6 @@
 // ==========================
 @use './utilities/variables';
 @use './utilities/mixins';
-@use './utilities/extends';
 
 // ==========================
 // BASE
@@ -22,7 +21,6 @@
 // ==========================
 // COMPONENTS
 // ==========================
-@use './components/buttons';
 @use './components/cards';
 @use './components/carousel';
 @use './components/labels';
