@@ -1,0 +1,68 @@
+@use '../utilities/variables' as *;
+
+
+main {
+    text-align: center;
+    background-color: $color-background;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+.mainPedals {
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: $spacing-medium;
+    padding: $spacing-medium;
+
+
+    img {
+        width: $pedal-image-width;
+        height: auto;
+        transition: transform $transition-fast;
+        cursor: pointer;
+
+
+        &:hover {
+            transform: scale($hover-scale);
+        }
+    }
+}
+
+
+.mainImage {
+
+    img {
+        width: 100%;
+        max-width: $main-image-width;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        background-color: $color-background;
+    }
+
+}
+
+
+// Responsive
+
+@media (max-width: 1024px) {
+
+    .mainPedals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .mainPedals {
+        grid-template-columns: 1fr;
+    }
+
+}
+

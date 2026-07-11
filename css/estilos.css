@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* ==========================
+   RESET
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==========================
+   GLOBAL STYLES
+========================== */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+}
+
+li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* ==========================
+   TIPOGRAFÍA
+========================== */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.headerLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.headerLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mainNav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mainNav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  transition: color 0.3s ease;
+}
+.mainNav a:hover {
+  color: #c7c7c7;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .mainNav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  background-color: #000;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footerSocial {
+  display: flex;
+  gap: 3rem;
+}
+.footerSocial a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.footerSocial a:hover {
+  color: #c7c7c7;
+  transform: translateY(-3px);
+}
+
+.footerMenu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footerMenu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.footerMenu a:hover {
+  color: #c7c7c7;
+}
+
+.footerCopy {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  color: #25D366;
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+.whatsapp:hover {
+  transform: scale(1.08);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+  .footerMenu ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footerSocial {
+    gap: 2rem;
+  }
+  .whatsapp {
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 2.5rem;
+  }
+}
+/* ==========================
+   CAROUSEL
+========================== */
+#carouselExample {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* ==========================
+   PEDAL CONTENT
+========================== */
+.pedal-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.pedal-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.pedal-title {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.pedal-description {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main {
+  text-align: center;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.mainPedals {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.mainPedals img {
+  width: 220px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.mainPedals img:hover {
+  transform: scale(1.08);
+}
+
+.mainImage img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+@media (max-width: 1024px) {
+  .mainPedals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .mainPedals {
+    grid-template-columns: 1fr;
+  }
+}
+.pedal-demos {
+  background: #000;
+}
+
+.pedal-demos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.video-grid iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
