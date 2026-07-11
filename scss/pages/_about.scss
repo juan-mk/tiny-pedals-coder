@@ -1,0 +1,53 @@
+@use '../utilities/variables' as *;
+
+// ABOUT PAGE
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $spacing-xl $container-padding;
+
+  section {
+    margin-bottom: $spacing-xl;
+  }
+
+  .hero-image {
+    margin-bottom: $spacing-xl;
+
+    img {
+      width: 100%;
+      max-width: $main-image-width;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+  }
+
+  p {
+    max-width: $text-max-width;
+    margin: 0 auto;
+    color: $color-text;
+    font-family: $font-primary;
+    line-height: 1.8;
+    text-align: justify;
+  }
+}
+
+
+// RESPONSIVE
+
+@media (min-width: $breakpoint-md) {
+
+  .about {
+    padding: $spacing-xl $container-padding;
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+    }
+  }
+}

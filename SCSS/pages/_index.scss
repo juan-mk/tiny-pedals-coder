@@ -1,6 +1,10 @@
 @use '../utilities/variables' as *;
 
 
+/* ==========================
+   MAIN
+========================== */
+
 main {
     text-align: center;
     background-color: $color-background;
@@ -10,59 +14,103 @@ main {
 }
 
 
+/* ==========================
+   PEDALS GRID
+========================== */
+
 .mainPedals {
 
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    gap: $spacing-medium;
-    padding: $spacing-medium;
+
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+    align-items: center;
+
+    gap: $spacing-lg;
+
+    padding: $spacing-lg;
 
 
     img {
+
         width: $pedal-image-width;
+
         height: auto;
+
         transition: transform $transition-fast;
+
         cursor: pointer;
 
 
         &:hover {
+
             transform: scale($hover-scale);
+
         }
     }
 }
 
 
+
+/* ==========================
+   HERO IMAGE
+========================== */
+
 .mainImage {
 
     img {
+
         width: 100%;
+
         max-width: $main-image-width;
+
         height: auto;
+
         display: block;
+
         margin: 0 auto;
+
         background-color: $color-background;
+
     }
 
 }
 
 
-// Responsive
 
-@media (max-width: 1024px) {
+/* ==========================
+   TABLET
+========================== */
+
+@media (min-width: $breakpoint-md) {
+
 
     .mainPedals {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns: repeat(2, auto);
+
     }
 
 }
 
 
-@media (max-width: 768px) {
+
+/* ==========================
+   DESKTOP
+========================== */
+
+@media (min-width: $breakpoint-lg) {
+
 
     .mainPedals {
-        grid-template-columns: 1fr;
+
+        display: grid;;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        gap: $spacing-medium;
+        padding: $spacing-medium;
+
     }
 
 }
-

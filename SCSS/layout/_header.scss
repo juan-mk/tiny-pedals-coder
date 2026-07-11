@@ -1,25 +1,32 @@
+// HEADER
+
 @use "../utilities/variables" as *;
 
+
 /* ==========================
-   HEADER
+   HEADER MOBILE FIRST
 ========================== */
 
 header {
     background-color: $color-header;
-    padding: $spacing-sm $spacing-lg;
+    padding: $spacing-sm $container-padding;
 
-    display: grid;
-    grid-template-columns: 80px 1fr 80px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: $spacing-md;
 
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+
 .headerLogo {
-    width: 80px;
-    height: 80px;
+
+    width: 60px;
+    height: 60px;
+
     border-radius: 50%;
     overflow: hidden;
 
@@ -31,22 +38,30 @@ header {
     }
 }
 
+
 .mainNav {
 
     ul {
+
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        gap: $spacing-xl;
+
+        gap: $spacing-sm;
+
         list-style: none;
         margin: 0;
         padding: 0;
     }
 
+
     a {
+
         color: $color-text;
         text-decoration: none;
+
         font-family: $font-primary;
+
         transition: color $transition-fast;
 
         &:hover {
@@ -55,24 +70,41 @@ header {
     }
 }
 
+
+
 /* ==========================
-   RESPONSIVE
+   TABLET / DESKTOP
 ========================== */
 
-@media (max-width: $breakpoint-md) {
+@media (min-width: $breakpoint-md) {
 
     header {
-        flex-direction: column;
-        gap: $spacing-md;
+
+        display: grid;
+        grid-template-columns: 80px 1fr;
+
+        align-items: center;
+
+        padding: $spacing-sm $spacing-lg;
     }
+
+
+    .headerLogo {
+
+        width: 80px;
+        height: 80px;
+    }
+
 
     .mainNav {
 
         ul {
-            flex-direction: column;
-            gap: $spacing-md;
-        }
 
+            flex-direction: row;
+            justify-content: center;
+
+            gap: $spacing-xl;
+        }
     }
 
 }
