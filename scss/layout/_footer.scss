@@ -12,10 +12,14 @@ footer {
 
     padding-bottom: $spacing-md;
     padding-top: $spacing-md;
+
+    footer {
+    border-top: 1px solid $color-border;
+}
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
 
     gap: $spacing-md;
 
@@ -142,7 +146,7 @@ footer {
     footer {
 
         padding: $spacing-xl $spacing-lg;
- 
+        
 
 
     }
