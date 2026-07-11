@@ -1,40 +1,98 @@
-@use '../utilities/variables' as *;
+@use "../utilities/variables" as *;
+
+
+/* ==========================
+   MEDIA PAGE
+========================== */
+
 
 .pedal-demos {
-    background: #000;
+
+    padding: $spacing-xl $container-padding;
+    
+
 }
 
-.pedal-demos h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
+
 
 .video-grid {
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1400px;
+
+    grid-template-columns: 1fr;
+
+    gap: $spacing-lg;
+
+    max-width: $max-width;
+
     margin: 0 auto;
+
 }
 
-.video-grid iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: none;
+
+
+.video-card {
+
+    background-color: #111;
+
+    padding: $spacing-md;
+
     border-radius: 10px;
+
+
+    h3 {
+
+        color: whitesmoke;
+
+        font-family: $font-primary;
+
+        text-align: center;
+
+        margin-bottom: $spacing-md;
+
+    }
+
+
+    iframe {
+
+        width: 100%;
+
+        aspect-ratio: 16 / 9;
+
+        border: none;
+
+        border-radius: 8px;
+
+        display: block;
+
+    }
+
 }
 
-/* Tablet */
-@media (max-width: 900px) {
+
+
+/* TABLET */
+
+@media (min-width: $breakpoint-md) {
+
     .video-grid {
+
         grid-template-columns: repeat(2, 1fr);
+
     }
+
 }
 
-/* Mobile */
-@media (max-width: 600px) {
+
+
+/* DESKTOP */
+
+@media (min-width: $breakpoint-lg) {
+
     .video-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
