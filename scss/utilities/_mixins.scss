@@ -1,0 +1,31 @@
+// BUTTONS
+
+@use "variables" as *;
+
+
+@mixin button-style {
+
+    padding: $spacing-sm $spacing-lg;
+
+    background-color: $color-text;
+
+    color: $color-background;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-family: $font-primary;
+
+    cursor: pointer;
+
+    transition: transform $transition-fast;
+
+
+    &:hover {
+
+        transform: scale($hover-scale);
+
+    }
+
+}

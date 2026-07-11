@@ -1,4 +1,5 @@
 @use '../utilities/variables' as *;
+@use "../utilities/mixins" as *;
 
 .contact {
 
@@ -202,15 +203,7 @@
 
     button {
 
-        padding: $spacing-sm;
-
-        background-color: $color-text;
-
-        color: $color-background;
-
-        border: none;
-
-        cursor: pointer;
+        @include button-style;
 
     }
 
