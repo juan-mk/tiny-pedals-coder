@@ -1,107 +1,75 @@
 @use '../utilities/variables' as *;
 
 
-//MAIN
-
-
-main {
-    text-align: center;
-    background-color: $color-background;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-
-
-//PEDALS GRID
+// PEDALS GRID
 
 .mainPedals {
 
     display: grid;
-
     grid-template-columns: 1fr;
 
     justify-items: center;
     align-items: center;
 
     gap: $spacing-lg;
-
     padding: $spacing-lg;
 
 
     img {
-
         width: $pedal-image-width;
-
         height: auto;
 
         transition: transform $transition-fast;
-
         cursor: pointer;
 
 
         &:hover {
-
             transform: scale($hover-scale);
-
         }
     }
 }
 
 
-
-//ERO IMAGE
+// HERO IMAGE
 
 .mainImage {
 
     img {
-
         width: 100%;
-
         max-width: $main-image-width;
 
         height: auto;
-
         display: block;
 
         margin: 0 auto;
-
         background-color: $color-background;
-
     }
-
 }
 
 
-
-//TABLET
+// TABLET
 
 @media (min-width: $breakpoint-md) {
 
-
     .mainPedals {
-
         grid-template-columns: repeat(2, auto);
-
     }
 
 }
 
 
-
-//DESKTOP
+// DESKTOP
 
 @media (min-width: $breakpoint-lg) {
 
-
     .mainPedals {
 
-        display: grid;;
         grid-template-columns: repeat(3, auto);
+
         justify-content: center;
+
         gap: $spacing-medium;
         padding: $spacing-medium;
-
     }
 
 }
