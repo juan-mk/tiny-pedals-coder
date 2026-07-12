@@ -141,6 +141,15 @@ footer {
   color: #c7c7c7;
   transform: translateY(-3px);
 }
+.footerSocial .fa-instagram {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.footerSocial .fa-youtube {
+  color: #FF0000;
+}
 
 .footerMenu ul {
   display: flex;
