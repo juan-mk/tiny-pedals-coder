@@ -1,33 +1,31 @@
-// ==========================
+
 // UTILITIES
-// ==========================
+
 @use './utilities/variables';
 @use './utilities/mixins';
 
-// ==========================
+
 // BASE
-// ==========================
+
 @use './base/reset';
 @use './base/base';
 @use './base/typography';
 
-// ==========================
+
 // LAYOUT
-// ==========================
+
 @use './layout/header';
-@use './layout/navbar';
 @use './layout/footer';
 
-// ==========================
-// COMPONENTS
-// ==========================
-@use './components/cards';
-@use './components/carousel';
-@use './components/labels';
 
-// ==========================
+// COMPONENTS
+
+
+@use './components/carousel';
+
+
 // PAGES
-// ==========================
+
 @use './pages/index';
 @use './pages/gallery';
 @use './pages/about';
