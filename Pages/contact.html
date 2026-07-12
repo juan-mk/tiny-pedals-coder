@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <meta
+      name="description"
+      content="Get in touch with Tiny Pedals Big Sound for information, questions, and inquiries about guitar effects pedals."
+    />
+    <link rel="icon" type="image/png" href="../assets/images/logoFavicon.png" />
+
+    <title>Contact</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,141 +35,86 @@
   </head>
   <body>
     <header>
-
-    <div class="headerLogo">
+      <div class="headerLogo">
         <a href="../index.html">
-            <img src="../assets/images/logo.webp" alt="Tiny Pedals Big Sound">
+          <img src="../assets/images/logo.webp" alt="Tiny Pedals Big Sound" />
         </a>
-    </div>
+      </div>
 
-    <nav class="navbar navbar-expand-md mainNav">
-
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#mainMenu">
-
-            <span class="navbar-toggler-icon"></span>
-
+      <nav class="navbar navbar-expand-md mainNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Index</a>
+            </li>
 
-            <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Index</a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html">About</a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./media.html">Media</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./gallery.html">Gallery</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./media.html">Media</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-
-            </ul>
-
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-
-    </nav>
-
-</header>
-<main>
-
-    <h1>Tiny Pedals Big Sound</h1>
-    <h2>Contact</h2>
-    <section class="contact">
-
+      </nav>
+    </header>
+    <main>
+      <h1>Tiny Pedals Big Sound</h1>
+      <h2>Contact</h2>
+      <section class="contact">
         <div class="contactContent">
+          <div class="contactInfo">
+            <h3>Let's talk about tone</h3>
 
+            <p>
+              Have questions about our pedals? Need help finding your sound?
+            </p>
 
-            <div class="contactInfo">
+            <p>Contact our team and we will be happy to help you.</p>
 
-                <h3>Let's talk about tone</h3>
+            <a href="#" class="contactWhatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              Chat with us
+            </a>
+          </div>
 
-                <p>
-                    Have questions about our pedals?
-                    Need help finding your sound?
-                </p>
+          <form class="contactForm">
+            <label for="name"> Name </label>
 
-                <p>
-                    Contact our team and we will be happy
-                    to help you.
-                </p>
+            <input type="text" id="name" placeholder="Your name" />
 
+            <label for="email"> Email </label>
 
-                <a href="#" class="contactWhatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Chat with us
-                </a>
+            <input type="email" id="email" placeholder="Your email" />
 
+            <label for="message"> Message </label>
 
-            </div>
+            <textarea id="message" placeholder="Tell us about your project">
+            </textarea>
 
-
-
-            <form class="contactForm">
-
-
-                <label for="name">
-                    Name
-                </label>
-
-                <input 
-                    type="text" 
-                    id="name"
-                    placeholder="Your name">
-
-
-
-                <label for="email">
-                    Email
-                </label>
-
-                <input 
-                    type="email" 
-                    id="email"
-                    placeholder="Your email">
-
-
-
-                <label for="message">
-                    Message
-                </label>
-
-                <textarea
-                    id="message"
-                    placeholder="Tell us about your project">
-                </textarea>
-
-
-
-                <button type="submit">
-                    Send Message
-                </button>
-
-
-            </form>
-
-
+            <button type="submit">Send Message</button>
+          </form>
         </div>
-
-
-    </section>
-
-</main>
+      </section>
+    </main>
 
     <footer>
       <div class="footerSocial">
@@ -179,15 +130,15 @@
         </a>
       </div>
 
-<nav class="footerMenu">
-    <ul>
-        <li><a href="../index.html">Index</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./media.html">Media</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-    </ul>
-</nav>
+      <nav class="footerMenu">
+        <ul>
+          <li><a href="../index.html">Index</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./media.html">Media</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
       <a href="#" class="whatsapp">
         <i class="fa-brands fa-whatsapp"></i>
