@@ -406,7 +406,7 @@ footer {
     font-family: var(--font-primary);
 }
 
-.contactWhatsapp {
+.contactEmail {
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-sm);
@@ -415,24 +415,7 @@ footer {
     font-size: 1.2rem;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-}
-
-.contactForm label {
-    color: var(--color-text);
-}
-
-.contactForm input,
-.contactForm textarea {
-    padding: var(--spacing-sm);
-    font-family: var(--font-primary);
-}
-
 /* Shared button style (was the Sass mixin "button-style") */
-.contactForm button,
 .btnPrimary {
     padding: var(--spacing-sm) var(--spacing-lg);
     background-color: var(--color-text);
@@ -444,7 +427,6 @@ footer {
     transition: transform var(--transition-fast);
 }
 
-.contactForm button:hover,
 .btnPrimary:hover {
     transform: scale(var(--hover-scale));
 }
