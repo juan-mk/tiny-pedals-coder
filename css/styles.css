@@ -515,7 +515,25 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-/* "Add to cart" button: Siri-style gradient border and text on black */
+/* "Add to cart" button: white outline, fills white on hover */
+.btnAddToCart {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+    border-radius: 5px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btnAddToCart:hover {
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+/* Checkout button: Siri-style gradient border and text on black */
 .btnSiri {
     --siri-gradient: linear-gradient(90deg, #ff2d95, #a855f7, #0a84ff, #5ac8fa, #ff9f0a, #ff2d95);
     padding: var(--spacing-sm) var(--spacing-lg);

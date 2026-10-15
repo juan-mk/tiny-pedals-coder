@@ -62,7 +62,7 @@ function renderProducts() {
             <img src="${image}" alt="${name}">
             <h3 class="productName">${name}</h3>
             <p class="productPrice">${formatPrice(price)}</p>
-            <button class="btnSiri" data-product-id="${id}"><span>Add to cart</span></button>
+            <button class="btnAddToCart" data-product-id="${id}">Add to cart</button>
         `;
         productList.append(productCard);
     });
