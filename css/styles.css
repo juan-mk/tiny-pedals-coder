@@ -231,7 +231,7 @@ footer {
     margin: 0;
 }
 
-.whatsapp {
+.floatingContact {
     position: fixed;
     right: 1rem;
     bottom: 1rem;
@@ -240,7 +240,7 @@ footer {
     transition: transform var(--transition-fast);
 }
 
-.whatsapp:hover {
+.floatingContact:hover {
     transform: scale(var(--hover-scale));
 }
 
@@ -258,7 +258,7 @@ footer {
         gap: var(--spacing-xl);
     }
 
-    .whatsapp {
+    .floatingContact {
         right: 2rem;
         bottom: 2rem;
         font-size: 3rem;
