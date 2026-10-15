@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Angel Chorus",
+        "price": 89,
+        "image": "./assets/images/Angel Chorus.webp"
+    },
+    {
+        "id": 2,
+        "name": "Creepy Reverb",
+        "price": 95,
+        "image": "./assets/images/Creepy Reverb.webp"
+    },
+    {
+        "id": 3,
+        "name": "Dripping Delay",
+        "price": 99,
+        "image": "./assets/images/Dripping Delay.webp"
+    },
+    {
+        "id": 4,
+        "name": "Noise Gate",
+        "price": 69,
+        "image": "./assets/images/Noise Gate.webp"
+    },
+    {
+        "id": 5,
+        "name": "Sonic Bone Distortion",
+        "price": 85,
+        "image": "./assets/images/Sonic Bone Distortion.webp"
+    },
+    {
+        "id": 6,
+        "name": "Sonic Fuel Overdrive",
+        "price": 79,
+        "image": "./assets/images/Sonic Fuel Overdrive.webp"
+    }
+]
